@@ -1,0 +1,20 @@
+{
+  "name": "helmet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "mcp": "bun src/mcp/server.ts",
+    "mcp:http": "bun src/mcp/http.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
