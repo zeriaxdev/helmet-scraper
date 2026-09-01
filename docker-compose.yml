@@ -8,7 +8,7 @@ services:
     command: sh -c "bun install && bun run src/mcp/http.ts"
     # Loopback only — the host reverse-proxy (DollarDeploy nginx) fronts it.
     ports:
-      - "127.0.0.1:${PORT:-3001}:3001"
+      - "127.0.0.1:${PORT:-3011}:3001"
     environment:
       - MCP_PORT=3001
     restart: unless-stopped
